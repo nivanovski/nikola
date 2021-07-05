@@ -1,0 +1,183 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+.text-primary {
+    color: #ffc033;
+}
+/* Utility Classes  */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #333333e0;
+    color: #fff;
+    padding: 20px 80px 20px 80px;
+    top: 0;
+    z-index: 1;
+    border-bottom: 3px solid #ffc033;
+}
+/* Styling ul */
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+/* Styling 'the logo' in the navbar */
+#navbar h2 a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+/* Styling links in the navbar */
+#navbar li a {
+    text-decoration: none;
+    padding: 16px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+/* Adding hover */
+#navbar li a:hover {
+    background-color: #ffc033;
+}
+/* Showcase Area */
+#showcase {
+    background: url("IMG/background.jpg") no-repeat center center/cover;
+    height: 91.7vh;
+}
+.showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 81px;
+    left: 0;
+    bottom: -20px;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+}
+.showcase-content h1 {
+    font-size: 30px;
+}
+.showcase-content p {
+    font-size: 18px;
+}
+
+/* Section: About */
+#about {
+    background: url("IMG/background.jpg") no-repeat center center/cover;
+    border: 1px solid black;
+    margin: auto;
+}
+#about h2,
+#about h3 {
+    margin-bottom: 5px;
+    font-variant: petite-caps;
+}
+#about p.lead {
+    margin-bottom: 5px;
+}
+#about > div > div.about-image > img {
+    border-radius: 20px;
+    display: inline-block;
+    float: right;
+    margin-top: -376px;
+    width: 400px;
+}
+#about .about-image {
+    flex: 1;
+}
+#about > div {
+    background-color: #e6e4e4;
+    width: 1200px;
+    border: 1px solid black;
+    padding: 20px 0 0 20px;
+    margin: auto;
+    max-width: 1100px;
+}
+/* Section: Projects */
+#about > div > img{
+    width: 300px;
+    padding: 20px;
+}
+#about > div > img:nth-child(3) {
+    margin-left: 448px;
+    width: 297px;
+    height: 227px
+}
+#about > div > img:nth-child(5) {
+    margin-left: 444px;
+}
+#about > div > h2 {
+    font-style: italic;
+    font-variant: petite-caps;
+}
+
+/* Contact / Footer */
+#contact {
+    background-color: #333333e0;
+    padding: 30px 0;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    font-variant: petite-caps;
+}
+.footer-col h4::before {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #ffc033;
+    height: 2px;
+    box-sizing: border-box;
+    width: 60px;
+}
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+#contact > div > div > div {
+    text-align: center;
+}
+.social-links a:hover {
+    background-color: #ffc033;
+}
+#about > div > h2 {
+    text-align: center;
+}
+
+
+
+
+
+
+
